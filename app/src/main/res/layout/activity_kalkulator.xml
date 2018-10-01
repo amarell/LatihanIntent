@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Kalkulator">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        style="@style/textView_style"
+        android:text="Alas: "
+        />
+    <EditText
+        style="@style/editText_style"
+        android:id="@+id/alas2"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="masukan alas"/>
+
+    <TextView
+        style="@style/textView_style"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tinggi: "
+        />
+    <EditText
+        android:id="@+id/tinggi"
+        android:inputType="number"
+        style="@style/editText_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="masukan tinggi"/>
+    <Button
+        android:id="@+id/btnhitung"
+        android:background="@drawable/buttonstyle"
+        android:layout_width="match_parent"
+        android:textColor="#ffff"
+        android:layout_height="wrap_content"
+        android:text="Hitung"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnhitungintent"
+            android:background="@drawable/buttonstyle"
+            android:layout_width="match_parent"
+            android:textColor="#ffff"
+            android:layout_height="wrap_content"
+            android:text="Hitung dengan pindah activity"/>
+
+
+    <TextView
+        style="@style/textView_style"
+        android:id="@+id/hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HASIL"
+        android:textSize="28dp"
+        android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>
